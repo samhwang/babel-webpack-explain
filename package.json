@@ -1,0 +1,12 @@
+{
+  "name": "babel-webpack-example",
+  "version": "1.0.0",
+  "description": "Babel and Webpack example",
+  "license": "MIT",
+  "private": "true",
+  "scripts": {
+    "build:babel": "",
+    "build:webpack": ""
+  },
+  "dependencies": {}
+}
