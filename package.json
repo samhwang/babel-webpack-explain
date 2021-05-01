@@ -5,8 +5,10 @@
   "license": "MIT",
   "private": "true",
   "scripts": {
-    "build:babel": "babel src -d babelOutput",
-    "build:webpack": "webpack"
+    "prebuild": "rimraf babelOutput && rimraf webpackOutput",
+    "build:babel": "yarn prebuild && babel src -d babelOutput",
+    "build:webpack": "yarn prebuild && webpack",
+    "build:webpack:prod": "yarn prebuild && webpack --mode=production"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -18,6 +20,7 @@
     "@babel/preset-env": "^7.14.0",
     "@babel/preset-react": "^7.13.13",
     "babel-loader": "^8.2.2",
+    "rimraf": "^3.0.2",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0"
   }
