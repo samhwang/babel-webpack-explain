@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": "true",
   "scripts": {
-    "build:babel": "",
+    "build:babel": "babel src -d babelOutput",
     "build:webpack": ""
   },
   "dependencies": {
